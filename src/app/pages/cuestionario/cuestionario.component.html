@@ -1,0 +1,197 @@
+<div class="col-lg-12 cuestionario ">
+  <div class="col-lg-9 vtabs customvtab">
+    <ul class="nav nav-tabs tabs-vertical" role="tablist"> 
+        <li class="nav-item"> <a  class="nav-link active " data-toggle="tab" href="#uno" role="tab" aria-expanded="true"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 1 </font></font></a> </li>
+        <li class="nav-item"> <a  class="nav-link " data-toggle="tab" href="#dos" role="tab" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 2 </font></font> </a> </li>
+        <li class="nav-item"> <a  class="nav-link " data-toggle="tab" href="#tres" role="tab" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 3 </font></font> </a> </li>
+        <li class="nav-item"> <a  class="nav-link " data-toggle="tab" href="#cuatro" role="tab" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 4 </font></font> </a> </li>
+        <li class="nav-item"> <a  class="nav-link " data-toggle="tab" href="#cinco" role="tab" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 5 </font></font> </a> </li>
+      </ul>
+    <!-- TABS -->
+
+    <div class="tab-content">
+        <!-- PRIMERA SECCION -->
+        <br>
+        
+        <div  class="tab-pane p-20  active" id="uno" role="tabpanel" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font>
+         
+          <div id="" class="table-responsive">
+              <table  class="table">
+                  <thead class="cabecera">
+                      <tr >
+                          <th scope="col">Preguntas</th>
+                           <th scope="col" >Selecciona una respuesta</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td >Sexo</td>
+                        <td><p>
+                          <input type="radio" name="demo" value="one" id="radio-one" class="form-radio" ><label for="radio-one">Hombre</label>
+                          <input type="radio" name="demo" value="one" id="radio-one" class="form-radio" ><label for="radio-one">Mujer</label>
+                        </p></td>   
+                      </tr>
+                      <tr>
+                        <td >¿Cuántos años tienes?</td>
+                        <td><input type="number" class="form-control col-lg-5" min="1" max="99" maxlength="2"></td>
+                      </tr>
+                      <tr>
+                        <td >¿Actualmente estas?</td>
+                        <td>
+                          <select class="col-lg-4 custom-select form-control " style="width: 200px">
+                            <option>Soltero</option>
+                            <option>En una relación de noviazgo</option>
+                            <option>Empezando una relación</option>
+                            <option>En una relación de compromiso para matrimonio</option>
+                            <option>Separado (a)</option>
+                            <option>Divorciado (a)</option>
+                            <option>Viudo (a) </option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td >¿Te encuentras recibiendo algún tratamiento neurológico o psiquiátrico? </td>
+                        <td><p>
+                          <input type="radio" name="tratamiento" value="one" id="radio-one" class="form-radio" ><label for="radio-tratamiento">Si</label>
+                          <input type="radio" name="tratamiento" value="one" id="radio-one" style="margin-left: 30px" class="form-radio" ><label for="radio-tratamiento">No</label>
+                        </p></td>               
+                      </tr>
+                    </tbody>
+              </table>
+             
+              </div>
+             
+         
+          
+        </div>
+         <!--SEGUNDA SECCION-->
+        <div   class="tab-pane" id="dos" role="tabpanel" aria-expanded="false">
+        <h5>TIPOS DE MATERIAL SEXUAL EN LÍNEA</h5>
+        <div class="alert alert-info">
+            Cuando hablamos de material sexual en línea nos referimos a la consulta y/o interacción que tienen los jóvenes en páginas de internet, correos electrónicos, chat canales de videos en línea, video llamadas, uso de redes sociales y foros en línea con fines sexuales; como ver imágenes, películas y animaciones que exponen los genitales, personas teniendo sexo, excitación, búsqueda de compañeros sexuales y/o cibersexo. 						
+        </div>
+        <p><strong>Instrucciones: </strong><label>Indica la frecuencia con la que has consultado y/o visto lo siguiente:</label>
+        </p>
+        <div id="table-container" class="table-responsive">
+            <table id="maintable" class="table">
+                <thead class="cabecera">
+                    <tr >
+                        <th scope="col">Preguntas</th>
+                        <th scope="col" >Frecuentemente</th>
+                        <th scope="col" >Algunas Veces</th>
+                        <th scope="col" >Rara vez</th>
+                        <th scope="col" >Nunca</th>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of seccion2">
+                      <td >{{p.pregunta}}</td>
+                      <td><input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"></label></td>
+                      <td><input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"></label></td>
+                      <td><input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"></label></td>
+                      <td><input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"></label></td>
+                                     
+                  </tr>
+                  </tbody>
+            </table>
+            <div id="bottom_anchor"></div>
+            </div>
+       
+        </div>
+        <!--TERCERA SECCION-->
+        <div   class="tab-pane" id="tres" role="tabpanel" aria-expanded="false">
+            <h5>USO COACTIVO DE MATERIAL SEXUAL EN LINEA</h5>
+            <div class="alert alert-info">
+                Cuando hablamos de material sexual en línea nos referimos a la consulta y/o interacción que tienen los jóvenes en páginas de internet, correos electrónicos, chat canales de videos en línea, video llamadas, uso de redes sociales y foros en línea con fines sexuales; como ver imágenes, películas y animaciones que exponen los genitales, personas teniendo sexo, excitación, búsqueda de compañeros sexuales y/o cibersexo.  
+            </div>
+            <p><strong>Instrucciones: </strong><label> Lee cada pregunta cuidadosamente y selecciona la respuesta que se relacione con tus actividades.</label> </p>
+            <div class="table-responsive">
+                <table class="table">
+                  <caption></caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Preguntas</th>
+                      <th scope="col" style="width: 500px" >Selecciona una respuesta</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let p of seccion3">
+                      <td >{{p.pregunta}}</td>
+                      <td><p>
+                            <input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}">Frecuentemente</label>
+                            <input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}">Alguna vez</label>
+                            <input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}">Rara vez</label>
+                            <input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}">Nunca</label> 
+                      </p></td>     
+                  </tr>
+                  </tbody>
+                </table>
+               </div> 
+        </div>
+        <!--CUARTA SECCION-->
+        <div   class="tab-pane" id="cuatro" role="tabpanel" aria-expanded="false">
+            <h5>USO PROBLEMÁTICO DE MATERIAL SEXUAL EN LINEA </h5>
+            <div class="alert alert-info">
+                Cuando hablamos de material sexual en línea nos referimos a la consulta y/o interacción que tienen los jóvenes en páginas de internet, correos electrónicos, chat canales de videos en línea, video llamadas, uso de redes sociales y foros en línea con fines sexuales; como ver imágenes, películas y animaciones que exponen los genitales, personas teniendo sexo, excitación, búsqueda de compañeros sexuales y/o cibersexo.  
+            </div>
+            <p><strong>Instrucciones: </strong><label> Lee cada pregunta cuidadosamente y selecciona la respuesta que se relacione con tus actividades.</label></p>
+            <div class="table-responsive">
+                <table class="table">
+                  <caption></caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Preguntas</th>
+                      <th scope="col"  >Completamente de acuerdo</th>
+                      <th scope="col"  >De acuerdo</th>
+                      <th scope="col"  >Ni de acuerdo ni en desacuerdo</th>
+                      <th scope="col"  >En desacuerdo</th>
+                      <th scope="col"  >Completamente en desacuerdo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let p of seccion4">
+                      <td >{{p.pregunta}}</td>
+                      <td><input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"> 5</label></td>
+                      <td><input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"> 4</label></td>
+                      <td> <input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"> 3</label>  </td> 
+                      <td><input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"> 2</label> </td>        
+                      <td> <input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"> 1</label></td>
+                  </tr>
+                  </tbody>
+                </table>
+               </div>    
+        </div>
+        <!--QUINTA SECCION-->
+        <div   class="tab-pane" id="cinco" role="tabpanel" aria-expanded="false">
+            <h5>ESCALA DE COMPULSIVIDAD SEXUAL</h5>
+            <div class="alert alert-info">
+                A continuación, se presentan una serie de afirmaciones sobre tu comportamiento sexual. Por favor, contesta con sinceridad, tus respuestas son anónimas y confidenciales.
+            </div>
+            <p><strong>Instrucciones: </strong><label> Lee cada pregunta cuidadosamente y selecciona la respuesta que se relacione con tus actividades.</label> </p>
+            <div class="table-responsive">
+                <table class="table">
+                  <caption></caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Preguntas</th>
+                      <th scope="col"  >Nada característico de mí</th>
+                      <th scope="col"  >Algo  característico de mí</th>
+                      <th scope="col"  >Bastante característico de mí</th>
+                      <th scope="col"  >Muy  característico de mí</th> 
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let p of seccion5">
+                      <td >{{p.pregunta}}</td>
+                      <td><input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"> 1</label></td>
+                      <td> <input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"> 2</label>  </td> 
+                      <td><input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"> 3</label> </td>        
+                      <td> <input type="radio" name="{{p.radio}}" value="one" id="radio-one" class="form-radio" ><label for="{{p.radio}}"> 4</label></td>
+                  </tr>
+                  </tbody>
+                </table>
+        </div>
+    </div>
+</div> <!---->
+    
+
